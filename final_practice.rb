@@ -26,14 +26,23 @@ puts say_hi
 # How many arguments did you pass your method?
 # What data type was your argument(s)?
 
+# The return value of the method is the string "Hi 'name', how are you?" 'name' will be replaced with the supplied arg
+# The method calls for one argument to be passed
+# The data type used in the arg is a String
 
-
+def custom_greeting(name)
+    "Hi #{name}, how are you? "
+end
+name_1 = custom_greeting("Jim")
+name_2 = custom_greeting("James")
+puts name_1, name_2
 
 # 3: Write a method named greet_person that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
 
 # What is the return value of your method?
 # How many arguments did you pass your method?
 # What data type was your argument(s)?
+
 
 
 # 4: Write a method named square that takes in one integer, and returns the square of that integer.
