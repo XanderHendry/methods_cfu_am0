@@ -43,7 +43,16 @@ puts name_1, name_2
 # How many arguments did you pass your method?
 # What data type was your argument(s)?
 
-
+# The return value is the string "Hello 'first' 'middle' 'last', how are you?" 'first' 'middle', and 'last' will be replaced with the supplied args.
+# This method calls for three args to be passed.
+# The data type used in the arguments are strings.
+def greet_person(first, middle, last)
+    "Hello #{first} #{middle} #{last}, how are you?"
+end
+greet_me = greet_person("Vincent", "Alexander", "Hendry")
+greet_kaity = greet_person("Kaitlyn", "Sierra", "Hendry")
+puts greet_me
+puts greet_kaity
 
 # 4: Write a method named square that takes in one integer, and returns the square of that integer.
 # Bonus: Print a sentence that interpolates the return value of your square method.
