@@ -9,12 +9,24 @@
 # What is the return value of your method?
 # How many arguments did you pass your method?
 
+# The return value of this method will be the Sting "Hi, how are you?"
+# no arguments are passed to this method
+
+def greeting
+    "Hi, how are you?"
+end
+
+puts greeting
+say_hi = greeting
+puts say_hi
 
 # 2: Write a method named custom_greeting that returns a greeting WITH a specific name.
 
 # What is the return value of your method?
 # How many arguments did you pass your method?
 # What data type was your argument(s)?
+
+
 
 
 # 3: Write a method named greet_person that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
