@@ -70,18 +70,7 @@ p prefered_name.delete_prefix("Ale").capitalize
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
-my_age = 33
-kaity_age = 31
 
-# The to_f method is called on the kaity_age variable, which stores the integer 31.
-# The to_f method has one job, returns the given integer, converted to a float.
-# The returned value is 31.0
-p kaity_age.to_f
-
-# The pred method is called on the my_age variable, wich stores the integer 33.
-# The pred method has one job, return the previous integer in successive order. In other words, removes a value of 1 from the given integer.
-# the returned value is 32
-p my_age.pred
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
@@ -89,16 +78,5 @@ p my_age.pred
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
 
-names = ["Andrew", "Cragun", "Cameron", "John"]
-numbers = [1, 2, 3, 4, 5]
 
-# The sample method is called on the names variable, which is storing an array of strings.
-# The sample method will return one or more random elements from the names array.
-# In this sample we pass (2) as the arg, telling the sample method to return 2 elements from the names array
-p names.sample(2)
-
-# The map method is called on the numbers variable, which is storing an array of integers.
-# The map method will create a new array based on the number variable, but with the values modified by the supplied block.
-# The supplied block creates the math parameter, then squares that parameter. This will square each element in the original array.
-p numbers.map {|math| math ** 2}
 
