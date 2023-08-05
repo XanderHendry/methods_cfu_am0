@@ -89,5 +89,16 @@ p my_age.pred
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+names = ["Andrew", "Cragun", "Cameron", "John"]
+numbers = [1, 2, 3, 4, 5]
 
+# The sample method is called on the names variable, which is storing an array of strings.
+# The sample method will return one or more random elements from the names array.
+# In this sample we pass (2) as the arg, telling the sample method to return 2 elements from the names array
+p names.sample(2)
+
+# The map method is called on the numbers variable, which is storing an array of integers.
+# The map method will create a new array based on the number variable, but with the values modified by the supplied block.
+# The supplied block creates the math parameter, then squares that parameter. This will square each element in the original array.
+p numbers.map {|math| math ** 2}
 
