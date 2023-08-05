@@ -61,6 +61,9 @@ puts greet_kaity
 # How many arguments did you pass your method?
 # What data type was your argument(s)?
 
+# This method will return a string that interpolates the supplied arg, and the squared value of that arg.
+# Only one arg will be passed.
+# The data type used in the supplied arg is an integer.
 def square(num)
     num_1 = num ** 2
     "#{num} squared equals #{num_1}"
@@ -69,10 +72,18 @@ end
 puts square(2)
 puts square(100)
 
-
-
 # 5: Write a method named check_stock that satisfies the following interaction pattern:
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
+
+def check_stock(stock, ingredient)
+    if stock >= 4
+        puts "#{ingredient} is stocked"
+    elsif stock <= 0
+        puts "#{ingredient} - OUT of stock!"
+    else
+        puts "#{ingredient} - running LOW"
+    end
+end
 
 check_stock(4, "Coffee");
 # => "Coffee is stocked"
