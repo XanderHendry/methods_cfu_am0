@@ -61,6 +61,15 @@ puts greet_kaity
 # How many arguments did you pass your method?
 # What data type was your argument(s)?
 
+def square(num)
+    num_1 = num ** 2
+    "#{num} squared equals #{num_1}"
+end
+
+puts square(2)
+puts square(100)
+
+
 
 # 5: Write a method named check_stock that satisfies the following interaction pattern:
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
