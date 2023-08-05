@@ -70,7 +70,18 @@ p prefered_name.delete_prefix("Ale").capitalize
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+my_age = 33
+kaity_age = 31
 
+# The to_f method is called on the kaity_age variable, which stores the integer 31.
+# The to_f method has one job, returns the given integer, converted to a float.
+# The returned value is 31.0
+p kaity_age.to_f
+
+# The pred method is called on the my_age variable, wich stores the integer 33.
+# The pred method has one job, return the previous integer in successive order. In other words, removes a value of 1 from the given integer.
+# the returned value is 32
+p my_age.pred
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
